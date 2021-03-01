@@ -10,4 +10,22 @@ public class Author {
 		this.name = name;
 		this.gender = gender;
 	}
+	
+	public String getEmail() {
+		return email;
+	}
+	public char getGender() {
+		return gender;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setEmail(String email) {
+		this.email = email;
+	}
+	@Override
+	public String toString() {
+
+		return this.name + "(" + this.gender + ")" +" at " + this.email;
+	}
 }
